@@ -41,16 +41,15 @@ footer {
   position: relative;
 }
 
-.footerTexto::before {
+.footerTexto::after {
   content: '';
-  background: url(/portfolio/img/detalhe.png);
-  background-repeat: no-repeat;
+  background: url("../img/detalhe.png") no-repeat center;
   position: absolute;
-  top: -11rem;
-  left: -3rem;
-  width: 300px;
-  height: 300px;
-  z-index: 3;
+  top: -14.5rem;
+  left: -25rem;
+  width: 100%;
+  height: 300%;
+  z-index: 2;
 }
 
 .copy {
