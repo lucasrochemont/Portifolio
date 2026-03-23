@@ -1,0 +1,107 @@
+.ultimaSection {
+  background-color: #000000;
+  z-index: 1;
+}
+
+.instagram {
+  text-decoration: none;
+  color: white;
+}
+
+.instagram:hover {
+  color: #D63341;
+  transition: 0.3s;
+}
+footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-color: black;
+  margin: 2rem auto;
+  margin-bottom: 0;
+  max-width: 1200px;
+  padding: 4rem;
+  align-items: center;
+  gap: 2rem;
+  z-index: 2;
+}
+
+.listaContatos {
+  font-size: 1.8rem;
+  font-weight: bold;
+  text-align: start;
+  margin-left: 7rem;
+  color: white;
+  line-height: 2;
+}
+
+.footerTexto {
+  color: #CCCCCC;
+  margin: 0;
+  font-size: 1.5rem;
+  position: relative;
+}
+
+.footerTexto::before {
+  content: '';
+  background: url(/portfolio/img/detalhe.png);
+  background-repeat: no-repeat;
+  position: absolute;
+  top: -11rem;
+  left: -3rem;
+  width: 300px;
+  height: 300px;
+  z-index: 3;
+}
+
+.copy {
+  margin-top: 1rem;
+  grid-column: 1 / -1;
+  text-align: start;
+  font-weight: 400;
+  color: rgb(129, 129, 129);
+}
+
+@media (max-width: 768px) {
+  footer {
+    grid-template-columns: 1fr;
+    padding: 3rem 2rem;
+    justify-items: center;
+    text-align: center;
+  }
+
+  .footerTexto {
+    font-size: 1.6rem;
+    text-align: center;
+  }
+
+  .footerTexto::before {
+    display: none;
+  }
+
+  .listaContatos {
+    font-size: 1.6rem;
+    text-align: center;
+  }
+
+  .copy {
+    grid-column: 1;
+    justify-self: center;
+    text-align: center;
+  }
+}
+
+@media (max-width: 450px) {
+  footer {
+    padding: 2.5rem 1.5rem;
+  }
+
+  .footerTexto {
+    font-size: 1.4rem;
+  }
+
+  .listaContatos {
+    font-size: 1.3rem;
+    width: 100%;
+    margin: 0px;
+  }
+}

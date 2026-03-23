@@ -1,0 +1,125 @@
+.introducao {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  margin: 2rem auto;
+  gap: 100px;
+  max-width: 1200px;
+  justify-items: center;
+}
+
+.introducao div {
+  align-content: center;
+  position: relative;
+}
+
+.introducao h1 {
+  color: black;
+  font-size: 4.5rem;
+  font-weight: 600;
+  margin-left: -8rem;
+  margin-bottom: 1.7rem;
+}
+
+.perfilFoto {
+  margin-top: 2rem;
+}
+
+.perfilMobile {
+  display: none;
+}
+
+.introducao h1::after {
+  content: '';
+  background: url("../img/detalhe.png") no-repeat center;
+  position: absolute;
+  top: -7.1rem;
+  left: -18.2rem;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.introducao p {
+  font-size: 1.5rem;
+  margin-left: -7.7rem;
+}
+
+@media (max-width: 890px) {
+  .introducao img {
+    margin-left: 2rem;
+  }
+
+  .introducao h1 {
+    font-size: 3.5rem;
+  }
+
+  .introducao h1::after {
+    left: -14rem;
+  }
+
+  .introducao h1::after {
+    top: -6rem;
+    left: -15rem;
+  } 
+}
+
+@media (max-width: 770px) {
+  .introducao {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    padding: 0 2rem;
+    text-align: center;
+  }
+
+  .introducao img {
+    display: flex;
+    margin: 0;
+  }
+
+  .introducao div {
+    margin: 0;
+  }
+
+  .introducao h1 {
+    font-size: 2.5rem;
+    margin-left: 0;
+    margin-bottom: 1rem;
+  }
+
+  .introducao h1::after {
+    display: none;
+  }
+
+  .introducao p {
+    font-size: 1.4rem;
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 450px) {
+  .introducao {
+    padding: 0 1.5rem;
+  }
+
+  .introducao h1 {
+    font-size: 2rem;
+  }
+
+  .introducao p {
+    font-size: 1.3rem;
+    margin-bottom: 2rem;
+  }
+
+  .introducao >.perfilFoto {
+    display: none;
+  }
+
+  .perfilMobile {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 40%;
+    grid-row: 1;
+    border: 2px solid #900b16;
+  }
+}

@@ -1,0 +1,241 @@
+.formacaoSection {
+  margin: 2rem auto;
+  background-color: #201E1F;
+}
+
+.formacao {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  margin: 2rem auto;
+  margin-bottom: 0;
+  max-width: 1200px;
+  justify-items: center;
+  background-color: #201E1F;
+  padding: 3rem;
+}
+
+.subtitulo {
+  font-size: 8rem;
+  align-content: center;
+  word-break: break-all;
+  max-width: 4ch;
+  line-height: 1;
+  text-transform: uppercase;
+  text-align: start;
+  color: #111011;
+}
+
+.formacaoTxt {
+  font-size: 1.5rem;
+  text-align: start;
+  margin-top: 4rem;
+  color: #a29898;
+}
+
+.diplomas {
+  display: flex;
+  flex-wrap: nowrap;
+  margin: 2rem 0;
+  gap: 1rem;
+  position: relative;
+}
+
+.diplomas li {
+  background-color: black;
+  color: #A3A3A3;
+  padding: 2rem 1rem;
+  position: relative;
+  flex: 1;
+}
+
+.emAndamento {
+  color: #A29898;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+}
+
+.diplomas li::before {
+  content: '';
+  position: absolute;
+  background-image: linear-gradient(to bottom, #e04f51, #bc2531 40%);
+  height: 1.3rem;
+  width: 0.3rem;
+  left: -0.33rem;
+}
+
+.diplomas h3 {
+  color: white;
+  font-weight: 600;
+  margin-bottom: 2rem;
+  margin-top: 0.5rem;
+}
+
+.instituicao {
+  text-transform: uppercase;
+  position: absolute;
+  bottom: 1rem;
+}
+
+.formacaoExtra {
+  display: none;
+}
+.formacaoExtra h3 {
+  font-size: 1rem;
+  text-transform: uppercase;
+  color: #A29898;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  position: relative;
+}
+
+.formacaoExtra h3::before {
+  content: '';
+  background-image: linear-gradient(to bottom, #e04f51, #bc2531);
+  border-radius: 50%;
+  size: 1rem;
+  width: 13px;
+  height: 13px;
+  position: absolute;
+  left: -1.6rem;
+  top: 0.2rem;
+}
+
+.cursosInt li {
+  display: flex;
+  justify-content: space-between;
+  font-weight: 300;
+  font-size: 1.2rem;
+  margin-top: 0.5rem;
+  margin-bottom: 2rem;
+  width: 100%;
+  color: white;
+}
+
+.tempoCurso {
+  color: #A3A3A3;
+}
+
+.idiomas h3 {
+  font-size: 1rem;
+  text-transform: uppercase;
+  color: #A29898;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  position: relative;
+}
+
+.idiomas h3::before {
+  content: '';
+  background-image: linear-gradient(to bottom, #e04f51, #bc2531);
+  border-radius: 50%;
+  width: 13px;
+  height: 13px;
+  position: absolute;
+  left: -1.6rem;
+  top: 0.2rem;
+}
+
+.idiomas li {
+  color: white;
+  text-transform: none;
+  font-weight: 300;
+  font-size: 1.2rem;
+}
+
+.idiomaNivel {
+  color: #A3A3A3;
+}
+@media (max-width: 850px) {
+  .subtitulo {
+    margin-right: 2rem;
+  }
+
+  .cursosInt, .idiomas, .idiomaNivel {
+    margin-left: 2rem;
+  }
+
+  .formacaoExtra h3 {
+    margin-left: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .formacao {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    padding: 2rem;
+  }
+
+  .subtitulo {
+    font-size: 3rem;
+    max-width: 100%;
+    color: #ffffff;
+    justify-self: start;
+  }
+
+  .formacaoTxt {
+    font-size: 1.4rem;
+    margin-top: 0;
+  }
+
+  .formacaoExtra h3 {
+    font-size: 1.2rem;
+  }
+
+  .cursosInt li {
+    font-size: 1.3rem;
+  }
+
+  .idiomas h3 {
+    font-size: 1.2rem;
+  }
+
+  .idiomas li {
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 450px) {
+  .formacao {
+    padding: 1.5rem;
+  }
+
+  .subtitulo {
+    font-size: 2.4rem;
+    margin: 0;
+    margin-top: 1rem;
+    justify-self: center;
+  }
+
+  .formacaoTxt {
+    font-size: 1.3rem;
+    text-align: center;
+  }
+
+  .diplomas {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 100%;
+  }
+
+  .diplomas li {
+    padding-bottom: 3rem;
+  }
+
+  .formacaoExtra h3 {
+  text-indent: 1rem;
+  }
+
+  .idiomas h3 {
+  text-indent: 1rem;
+  }
+  .formacaoExtra h3::before {
+  left: -1rem;
+  top: -0.1rem;
+}
+
+  .idiomas h3::before {
+  left: -0.9rem;
+  top: -0.1rem;
+}
+}

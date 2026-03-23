@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lucas Schimidt</title>
+  <link rel="stylesheet" href="styles/style.css">
+  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+  <header class="header">
+      <h1 class="logo">Lucas Schimidt</h1>
+      <nav class="menu">
+        <ul>
+          <li><a href="#experiencia">Experiência</a></li>
+          <li><a href="#formacao">Formação</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </nav>
+  </header>
+
+  <main class="introducao">
+    <img src="img/perfil01.png" alt="fotoPerfil" class="perfilFoto">
+    <img src="img/perfilMobile.jpeg" alt="fotoPerfil" class="perfilMobile">
+    <div>
+      <h1>Desenvolvedor<br>Front End &<br>UX/UI Designer</h1>
+      <p>Nova Friburgo, Rio de Janeiro</p>
+    </div>
+  </main>
+
+  <section class="experiencia" id="experiencia">
+    <h2 class="subtitulo01">Experiência</h2>
+    <div>
+      <p class="experienciaTxt">Desenvolvo pequenos projetos como o Bikcraft utilizando apenas <strong>HTML</strong> e <strong>CSS</strong>. Para aplicativos web como a rede social Dogs eu trabalhei no <strong>UX</strong> e <strong>UI Design</strong> do projeto.</p>
+      <div class="empresa">
+        <h3 class="empresaTitulo"><strong><a href="https://dancing-bombolone-ea9707.netlify.app/" class="links" target="_blank">Bikcraft</a></strong></h3 class="empresaTitulo">
+        <span class="empresaAno">2026</span>
+        <p>No projeto Bikcraft eu trabalhei no desenvolvimento completo do HTML e CSS do site.</p>
+        <span class="cargo"><strong>Desenvolvedor</strong></span>
+        <ul class="funcoes">
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>UX Design</li>
+          <li>UI Design</li>
+        </ul>
+      </div>
+
+      <div class="empresa">
+        <h3 class="empresaTitulo"><strong><a href="https://tangerine-starburst-a6a1ec.netlify.app/" target="_blank" class="links">Nova Tech</a></strong></h3 class="empresaTitulo">
+        <span class="empresaAno">2025</span>
+        <p>A Nova Tech é uma empresa fictícia que oferece serviços de softwares e hardwares. O projeto foi feito do zero utilizando HTML e CSS.</p>
+        <span class="cargo"><strong>Desenvolvedor</strong></span>
+        <ul class="funcoes">
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>UX Design</li>
+          <li>UI Design</li>
+        </ul>
+      </div>
+
+      <div class="empresa">
+        <h3 class="empresaTitulo"><strong><a href="https://luminous-centaur-dd13ee.netlify.app/" target="_blank" class="links">Sabor & Receitas</a></strong></h3 class="empresaTitulo">
+        <span class="empresaAno">2023</span>
+        <p>A página Sabor & Receitas foi um projeto criado para praticar meus primeiros aprendizados do CSS, aproveitando para anotar uma das minhas receitas favoritas</p>
+        <span  class="cargo"><strong>Desenvolvedor</strong></span>
+        <ul class="funcoes">
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>UX Design</li>
+          <li>UI Design</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <div class="ultimaSection">
+    <div class="formacaoSection">
+      <section class="formacao" id="formacao">
+        <h2 class="subtitulo">Formação</h2>
+        <div>
+        <p class="formacaoTxt">Minha mais recente experiência acadêmica é o curso que estou fazendo de Análise e Desenvolvimento de Sistemas. Além disso me mantenho sempre atualizado com cursos intensivos online.</p>
+        <ul class="diplomas">
+          <li>
+            <span class="diploma">Tecnólogo</span>
+            <h3 class="curso">Análise e Desenvolvimento de Sistemas <br><br> <div class="emAndamento">(em andamento)</div></h3>
+            <span class="instituicao">Estácio</span>
+          </li>
+          <li>
+            <span class="diploma">Designer</span>
+            <h3 class="curso">UX/UI Designer</h3>
+            <span class="instituicao">Origamid</span>
+          </li>
+          <li>
+            <span class="diploma">HTML & CSS</span>
+            <h3 class="curso">Dev FrontEnd</h3>
+            <span class="instituicao">Rocketseat</span>
+          </li>
+        </ul>
+        <div class="formacaoExtra">
+          <h3>Cursos Intensivos</h3>
+          <ul class="cursosInt">
+            <li>
+              <strong>UX Design & UI Design</strong>
+              <span class="tempoCurso">56h</span>
+            </li>
+            <li>
+              <strong>Front End para Iniciantes</strong>
+              <span class="tempoCurso">72h</span>
+            </li>
+          </ul>
+        </div>
+        <div class="idiomas">
+          <h3>Idiomas</h3>
+          <ul>
+            <li>
+              <strong>Inglês</strong>
+              <span class="idiomaNivel">/ Intermediário</span>
+            </li>
+          </ul>
+        </div>
+        </div>
+      </section>
+    </div>
+    <footer id="contato">
+    <p class="footerTexto">
+      Estou disponível para novos projetos no momento. Entre em contato comigo e marcamos uma conversa
+    </p>
+    <ul class="listaContatos">
+      <li>lucasschimidt007@gmail.com</li>
+      <li>(22) 99226-0003</li>
+      <li><a href="https://www.instagram.com/lucas_rochemont/" class="instagram" target="_blank">@lucas_rochemont</a></li>
+    </ul>
+    <p class="copy">Lucas Schimidt. Alguns direitos reservados.</p>
+    </footer>
+  </div>
+
+<script>
+    document.querySelectorAll('a[href^="#"]').forEach(link => {
+      link.addEventListener('click', function(e) {
+        e.preventDefault();
+        const destino = document.querySelector(this.getAttribute('href'));
+        if (!destino) return;
+
+        const inicio = window.scrollY;
+        const alvo = destino.getBoundingClientRect().top + inicio;
+        const duracao = 800;
+        let startTime = null;
+
+        function animar(timestamp) {
+          if (!startTime) startTime = timestamp;
+          const progresso = timestamp - startTime;
+          const porcentagem = Math.min(progresso / duracao, 1);
+          const ease = porcentagem < 0.5
+            ? 2 * porcentagem * porcentagem
+            : -1 + (4 - 2 * porcentagem) * porcentagem;
+
+          window.scrollTo(0, inicio + (alvo - inicio) * ease);
+
+          if (progresso < duracao) {
+            requestAnimationFrame(animar);
+          }
+        }
+
+        requestAnimationFrame(animar);
+      });
+    });
+  </script>
+</body>
+</html>
