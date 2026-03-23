@@ -59,6 +59,12 @@ footer {
   font-weight: 400;
   color: rgb(129, 129, 129);
 }
+@media (max-width: 1300px) {
+  .footerTexto::after {
+    left: -13rem;
+    top: -16rem;
+  }
+}
 
 @media (max-width: 768px) {
   footer {
